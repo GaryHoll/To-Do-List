@@ -7,16 +7,23 @@ function addItem() {
 
     // Check if the input is not empty
     if (userData.trim() !== "") {
-        // Create a new list item (li) element
+        
+        // Creates container var
+        var container = document.getElementById("container");
+
+        
+        //Creates button
+        var newButton = document.createElement('button');
+        newButton.textContent = "Delete";
+        container.appendChild(newButton);
+        
+        //Creates list item
         var li = document.createElement("li");
-
-        // Set the text of the list item to the input value
         li.textContent = userData;
+        container.appendChild(li);
 
-        // Add the list item to the unordered list (ul)
-        document.getElementById("itemList").appendChild(li);
 
-        // Clear the input field
+        //Clear input field
         document.getElementById("userInput").value = "";
     } else {
         alert("Please enter a valid item.");
