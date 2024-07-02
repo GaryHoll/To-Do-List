@@ -8,19 +8,23 @@ function addItem() {
     // Check if the input is not empty
     if (userData.trim() !== "") {
         
-        // Creates container var
-        var container = document.getElementById("container");
+        
 
+        // Creates container var
+        var listContainer = document.getElementById("listContainer");
+        var buttonContainer = document.getElementById("buttonContainer");
+
+        
         
         //Creates button
         var newButton = document.createElement('button');
-        newButton.textContent = "Delete";
-        container.appendChild(newButton);
+        newButton.textContent = "Completed!";
+        buttonContainer.appendChild(newButton);
         
         //Creates list item
         var li = document.createElement("li");
         li.textContent = userData;
-        container.appendChild(li);
+        listContainer.appendChild(li);
 
 
         //Clear input field

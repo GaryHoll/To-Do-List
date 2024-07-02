@@ -1,8 +1,35 @@
+body {
+    display: grid;
+    margin: 5px;
+    background-color: rgb(226, 238, 238);
+    
+}
 h1 {
     color: blue;
 }  
 
 .topnav {
-    height: 50px;
+    height: 100px;
+    width: 500px;
     background-color: rgb(243, 222, 222);
+    border: 0.5cap;
+    border-style: solid;
+    border-color: black;
+    
+}
+.flex-container {
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(72, 72, 235);
+    border: 1.5px solid black;
+}
+
+#listContainer {
+    color: antiquewhite;
+    width: 450px;
+}
+#buttonContainer {
+    right: 5px;
+    background-color: black;
 }
